@@ -1,0 +1,80 @@
+@import '../variables';
+.infrastructure__title {
+    padding-top: 100px;
+    color: $GrayscaleBlack;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 150%;
+    text-transform: uppercase;
+    position: relative;
+        &__description {
+        padding-top: 20px;
+        padding-bottom: 40px;
+        color: $Grayscale50;
+        font-size: 36px;
+        font-style: normal;
+        font-weight: 600;
+        line-height: 140%;}
+}
+.inf__pics {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-column-gap: 10px;
+    grid-row-gap: 10px;
+    &__item {
+        display: grid; 
+        min-height: 32vh; 
+        background-size: cover; 
+        background-position: center; 
+        text-align: end left; 
+        align-content: end;
+        &__text {
+            color: #FFF;
+            font-size: 14px;
+            font-style: normal;
+            font-weight: 600;
+            line-height: 120%; 
+            padding-bottom: 20px;
+            padding-left: 20px;
+            width: 60%;
+            &_1 {
+                color: #FFF;
+                font-size: 14px;
+                font-style: normal;
+                font-weight: 600;
+                line-height: 120%; 
+                padding-bottom: 20px;
+                padding-left: 20px;
+                width: 70%;
+            }
+        }
+    }
+}
+
+.inf__pics__item:nth-child(1) {
+    grid-column-start: 1;
+    grid-column-end: 3;
+}
+
+.inf__pics__item:nth-child(2) {
+    grid-row: span 2;
+}
+
+.inf {
+    &::after {
+        position: absolute;
+        content: '';
+        display: block;
+        width: 473px;
+        height: 2px;
+        background: #000;
+        left: 160px;
+        top: 111px;
+    }
+}
+
+
+
+
+

@@ -1,0 +1,96 @@
+@import '../variables';
+
+.hero__title {
+   
+    color: $Grayscale50;
+    font-size: 60px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 140%; 
+}
+
+.plans__title {
+    position: relative;
+    &_span {
+    &::after {
+        position: absolute;
+        content: '';
+        display: block;
+        width: 473px;
+        height: 2px;
+        background: #000;
+        left: 130px;
+        top: 20px;
+        }
+    }
+}
+
+.office__plans {
+    padding-top: 45px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-gap: 20px;
+    &_office {
+        padding-top: 30px;
+        color: #000;
+        font-size: 24px;
+        font-style: normal;
+        font-weight: 500;
+        line-height: 150%; 
+        text-transform: uppercase;
+    }
+}
+.office__plans_desc {
+    padding-top: 11px;
+    color: #9C9C9C;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 120%;
+    padding-bottom: 40px;
+    width: 90%;
+    &_1 {
+        padding-top: 11px;
+        color: #9C9C9C;
+        font-size: 18px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 120%;
+        padding-bottom: 15px;
+        width: 90%;
+    }
+}
+
+.office__plans_pic1 {
+    padding-bottom: 15px;
+}
+
+.office__plans_call {
+    display: inline-flex;
+    padding: 14px 34px 14px 32px;
+    align-items: flex-start;
+    gap: 10px;
+    background: $PrimaryBlue100;
+    color: #FFF;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 150%; 
+}
+
+.pic {
+    position: relative;
+}
+
+.picture {
+    padding-top: 100px;
+    position: absolute;
+    width: 100%;
+    left: 0;
+    height: auto;
+}
+
+.pdf__pdf {
+    padding-top: 580px;
+}
+

@@ -1,0 +1,43 @@
+@import '../variables';
+
+.hero__title {
+    color: $Grayscale50;
+    font-size: 52px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 140%; 
+}
+
+.location {
+    position: relative;
+    &__title {
+        color: $GrayscaleBlack;
+        font-size: 16px;
+        font-style: normal;
+        font-weight: 500;
+        line-height: 150%;
+        text-transform: uppercase;
+        padding-bottom: 50px;
+        &::after {
+            position: absolute;
+            content: '';
+            display: block;
+            width: 568px;
+            height: 2px;
+            background: #000;
+            left: 150px;
+            top: 11px;
+    }
+}
+}
+
+iframe {
+    position: absolute;
+    width: 100%;
+    left: 0;
+    height:500px;
+}
+
+.infrastructure {
+    padding-top: 480px;
+}

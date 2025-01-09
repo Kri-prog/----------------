@@ -1,0 +1,58 @@
+@import '../variables';
+footer {
+    min-width: 100%;
+    background-color: $PrimaryBlue100;
+    color: white;
+    min-height: 400px;
+    position: relative;
+}    
+
+.footer__description {
+    position: absolute;
+    width: 40%;
+    font-size: 28px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 120%; 
+    padding-top: 60px;
+    padding-left: 120px;  
+    &__logo {
+        position: absolute;
+        font-size: 32px;
+        font-style: normal;
+        font-weight: 900;
+        line-height: 170%; 
+        padding-left: 120px;
+        padding-top: 300px;
+    }
+}
+
+.footer__form {
+    padding-top: 60px;
+    display: inline-flex;
+    flex-direction: column;
+    gap: 10px;
+    padding-left: 900px;
+    &__input {
+        width: 334px;
+        height: 50px;
+        background: $PrimaryBlue100;
+        border-color: #fff;
+    }   
+}
+
+.button__end {    
+    padding: 14px 32px;
+    gap: 10px;
+    background: #fff;
+    border-color: #fff;
+}
+
+.footer__phone{
+    padding-top: 55px;
+    font-size: 32px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 150%; 
+}
+
